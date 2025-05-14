@@ -6,16 +6,20 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  background: linear-gradient(to right , #071f36, #0079f2);
-  color: #ffffff;
-  
+  background: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .header {
-  padding: 50px 0px;
+  padding: 20px 0px 0px;
+  background: #1e1e1e52;
+  display: flex;
+  justify-content: space-between;
 }
 .header h1 {
-  font-size: 100px;
+  font-size: 72px;
   margin: 20px;
 }
 .header p {
@@ -24,68 +28,99 @@ body {
 }
 
 .header hr {
-  margin: 20px;
-  width: 80%;
+  border: 3px solid #ffffff; /* Subtle border for the line */
 }
 
 .content {
   display: flex;
   justify-content: center;
+  margin-right: 50px;
   align-items: center;
   flex-wrap: wrap;
 }
 .content .sec {
-    background: #ffffff;
-    width: 200px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1e1e1e9c; /* Dark card background */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 .content .sec h2 {
   font-size: 32px;
-  padding: 10px ;
-  background: linear-gradient(to right top, #071f36, #0079f2);
+  padding: 10px 20px;
+  background: linear-gradient(
+    to right top,
+    #003366,
+    #0055aa
+  ); /* Adjusted gradient for dark mode */
 }
 .content .sec p {
   font-size: 48px;
   font-weight: 700;
   padding: 60px 10px;
-text-align: center;
-  color: #333333;
-  
+  text-align: center;
+  color: #ffffff;
 }
 
-.city-sec{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+.city-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 .city-sec select {
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #333333;
-    padding: 5px;
-    font-size: 16px;
-    margin-right: 10px;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 22px;
+  
+  background: #1e1e1e; /* Dark background for dropdown */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #555555; /* Subtle border */
 }
 
+.time-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  margin: 20px 0;
+  color: #ffffff;
+}
+.time-sec h2 {
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+.time-sec p {
+  font-size: 36px;
+}
+.time-sec span {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #0055aa;
+  padding: 0px 14px;
+  border-radius: 5px;
+  color: #e0e0e0; /* Light text color */
+}
 @media screen and (max-width: 768px) {
-    .header {
-        padding: 20px 0px 10px 0px;
-    }
+  .header {
+    padding: 20px 0px 10px 0px;
+  }
   .header h1 {
     font-size: 50px;
   }
   .header p {
     font-size: 20px;
   }
+  .time-sec h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
   .content .sec {
-    width: 100px;
-    height: 150px;
+    width: 140px;
+    height: 170px;
   }
   .content .sec h2 {
     font-size: 24px;
@@ -93,6 +128,53 @@ text-align: center;
   .content .sec p {
     font-size: 32px;
     padding: 10px 10px;
+    color: #f0f0f0; /* Light text color for cards */
   }
-    
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 16px;
+  }
+  .content {
+    margin: 0 auto;
+  }
+  .content .sec {
+    width: 100px;
+    height: 130px;
+    margin: 20px;
+  }
+  .content .sec h2 {
+    font-size: 18px;
+  }
+  .content .sec p {
+    font-size: 24px;
+  }
+  .city-sec select {
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .time-sec {
+
+    margin:  0;
+
+  }
+  .time-sec h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .time-sec p {
+    font-size: 20px;
+  }
 }

@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adan</title>
     <script src="node_modules/axios/dist/axios.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body >
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1 id="city-name">Stockholm</h1>
-            <p id="day-data">Monday 00\00\0000 </p>
-            <hr>
+      <div class="header">
+        <div>
+          <h1 id="city-name">Stockholm</h1>
+          <p id="day-data">Monday 00\00\0000</p>
         </div>
-        <div class="content">
-            <div  class="sec">
-                <h2 >Fajr</h2>
-                <p id="fajr">00:00</p>
-            </div>
-            <div  class="sec">
-                <h2 >Dhuhr</h2>
-                <p id="dhuhr">00:00</p>
-            </div>
-            <div class="sec">
-                <h2 >Asr</h2>
-                <p id="asr">00:00</p>
-            </div>
-            <div class="sec">
-                <h2>Magrib</h2>
-                <p id="maghrib">00:00</p>
-            </div>
-            <div class="sec">
-                <h2>Isha</h2>
-                <p id="isha"> 00:00</p>
-            </div>
+        <div class="time-sec">
+          <h2 id="current-time">00:00:00</h2>
+          <p id="next-prayer">Next Prayer:  Asr in 00:00:00</p>
         </div>
-        <div class="city-sec">
-            <select  name="" id="city-select" class="city-select">
-               
-            </select>
+      </div>
+      <div class="content">
+        <div class="sec">
+          <h2>Fajr</h2>
+          <p id="fajr">00:00</p>
         </div>
+        <div class="sec">
+          <h2>Dhuhr</h2>
+          <p id="dhuhr">00:00</p>
+        </div>
+        <div class="sec">
+          <h2>Asr</h2>
+          <p id="asr">00:00</p>
+        </div>
+        <div class="sec">
+          <h2>Magrib</h2>
+          <p id="maghrib">00:00</p>
+        </div>
+        <div class="sec">
+          <h2>Isha</h2>
+          <p id="isha">00:00</p>
+        </div>
+      </div>
+
+      <div class="city-sec">
+        <select name="" id="city-select" class="city-select"></select>
+      </div>
     </div>
 
-
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
