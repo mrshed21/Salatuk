@@ -37,6 +37,7 @@ body {
   margin-right: 50px;
   align-items: center;
   flex-wrap: wrap;
+  height: 500px;
 }
 .content .sec {
   width: 200px;
